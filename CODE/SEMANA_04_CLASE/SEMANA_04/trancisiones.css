@@ -1,0 +1,16 @@
+.caja {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  transition-property: all;
+  transition-duration: 2s;
+  /* transition-delay: 1s; */
+  transition-timing-function: ease-in;
+}
+
+.caja:hover {
+  background-color: blue;
+  transform: scale(2);
+  transform: translate(100px, 200px);
+  transform: rotate(180deg);
+}

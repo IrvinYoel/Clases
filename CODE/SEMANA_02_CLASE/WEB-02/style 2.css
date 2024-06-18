@@ -1,0 +1,83 @@
+h1{
+    color: blueviolet;
+}
+p{
+    font-size:x-large;
+    font-weight: bold;
+    color: orange;
+}
+#aq{
+    color: blue;
+}
+/* Para especificar un atributo se hace con [] */
+a[href="https://www.google.com/?hl=es"]{
+    color: aquamarine;
+}
+
+/* Para ser aún más específico con el atributo */
+[href="https://www.youtube.com/"]{
+    color: brown;
+}
+
+[heref=disabled] {
+    background-color: gray;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+input:focus {
+    background-color: red;
+}
+/* Evento even es para los elementos pares */
+/* ul li:nth-child(even){
+    background-color: red;
+    color: aqua;
+} */
+
+/* Evento odd se para los elementos impares */
+/* ul li:nth-child(odd){
+    background-color: yellow;
+    color: red;
+} */
+
+/* Podemos colocar cada cuantos elementos + en que elemento del indice comience */
+ul li:nth-child(3n+2){
+    color: brown;
+}
+
+/* Para atrapar el primer y último elemento*/
+/* ul li:first-child{
+    color: blue;
+}
+ul li:last-child{
+    color: blueviolet;
+} */
+
+/* Atrapar la primera letra del párrafo */
+/* p::first-letter{
+    color: black;
+    font-size: 44px;
+} */
+
+p::first-line{
+    color: blueviolet;
+}
+
+p::after{
+    content: "MAMA HUEVOO";
+}
+
+p::before{
+    content: "WAZA";
+}
+
+/* Darle el color que yo desee a la seleccion de texto */
+*::selection{
+    background-color: pink;
+}

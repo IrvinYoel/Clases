@@ -1,0 +1,47 @@
+img {
+  width: 100px;
+  animation-name: vuelo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  /* animation-timing-function: ease-in-out; */
+}
+
+/* @keyframes nombreanimacion */
+@keyframes vuelo {
+  /* Definir fotogramas - Desde 0% a 100%*/
+  0% {
+    transform: rotate(90deg);
+  }
+
+  25% {
+    transform: translate(1000px, 0) rotate(90deg);
+  }
+
+  30% {
+    transform: translate(1000px, 0px) rotate(180deg);
+  }
+
+  50% {
+    transform: translate(1000px, 500px) rotate(180deg);
+  }
+
+  55% {
+    transform: translate(1000px, 500px) rotate(270deg);
+  }
+
+  70% {
+    transform: translate(0, 500px) rotate(270deg);
+  }
+
+  75% {
+    transform: translate(0, 500px) rotate(360deg);
+  }
+
+  95% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(450deg);
+  }
+}

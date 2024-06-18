@@ -1,0 +1,31 @@
+/* Selector descendiente */
+/* p desciendde del body */
+body p{
+    font-family: arial;
+    font-size: 14px;
+}
+
+p span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: pink;
+}
+
+span{
+    font-size: 20px;
+    color: peru;
+}
+
+li{
+    color: aquamarine;
+}
+
+ul > li{
+    border-top: 5px solid red;
+    color: blueviolet; 
+}
+
+h2 ~ p{
+    background-color: blue;
+    color: cadetblue;
+}

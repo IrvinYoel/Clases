@@ -1,0 +1,48 @@
+/* Buenas práctica -  */
+/* Comodín para todo - para que el estilo se aplique a todos*/
+/* Se le suele llamar RESET-CSS */
+*{
+    box-sizing: border-box;
+    /* Algunos elementos traen estilos por defecto:
+    Verificar padding y margen siempre - Más molestos */
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 20px;
+    /* Cuando le damos un tamaño no lo hace considerando la caja con el borde, lo hace considerando el contenido */
+    width: 150px;
+    height: 100px;
+    /* Considera el padding y el border en el tamaño que le asignamos*/
+    /* box-sizing: border-box; */
+    /* La mayoria de elementos vienen con display: block:
+    div - article - header - h1 - h6 */
+    /* Otros vienen con inline, span - button - label - input */
+    /* Inline - Me voy a acomodar al contenido, no puedo tener ancho ni alto */
+    /* Inline Block - Se pone en inline pero se puede cambiar el ancho y alto de los bloques - No se suele utilizar mucho */
+    display: block;
+}
+
+.resaltar{
+    background-color: aqua;
+}
+
+article{
+    border: solid red;
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+}
+
+.articulos {
+    color: red;
+}
+
+/* Las clases se aplican a varios, pero el ID es único */
+/* Mientras más específicos seamos, lo va a tener en cuenta */
+#noticia{
+    color: aquamarine;
+}

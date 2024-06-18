@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!--Doctype me permite indicar la versión de HTML que estoy utilizando-->
+<html lang="es"> 
+    <!-- Configuracion informativa -->
+<head>
+    <meta charset="UTF-8">
+    <title>Estructura Slack</title>
+</head>
+<!-- Toda la parte visual -->
+<body>
+    <!-- span - etiqueta NO SEMANTICA, pero me permite envolver texto, resaltador -->
+    <span>Slack</span>
+    <nav id="navegacion">
+        <ul>
+        <!-- li - Elementos de una lista -->
+        <li>Funciones</li>
+        <li>Soluciones</li>
+        <li>Empresa</li>
+        <li>Recursos</li>
+        <li>Precio</li>
+        </ul>
+        <!-- div - divisor, NO ES SEMANTICA -->
+        <div>
+            <!-- hipervínculo, que me permite ir a otro lado, link -->
+            <a href="">Iniciar Sesión</a>
+            <!-- button - es un botón para disparar alguna acción -->
+            <button>Hablar con un asesor</button>
+            <button>Es gratis</button>
+        </div>
+    </nav>
+    <!-- horizontal rule -->
+    <hr>
+    <header>
+        <div>
+            <h1>Creada para las personas. Diseñada para la productividad</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus similique dolorem explicabo quasi enim unde eius qui quas, ipsa velit excepturi vero in commodi rerum officia veniam voluptatum? Sit, commodi.
+            </p>
+            <button>Registrate con correo electrónico</button>
+            <button>Registrate con Google</button>
+            <p>Probar Slack es gratis todo el tiempo que quieras
+            </p>
+        </div>
+        <!-- img - siempre que vaya con alt, se verá cuando el contenido no sea visible, y da accesibilidad -->
+        <img src="https://s1.elespanol.com/2023/11/28/enclave-ods/813179001_237982437_1706x960.jpg" width="400" alt="Pinguino">
+    </header>
+    <hr>
+    <main>
+        <section>
+            <!-- svg, webp, jpg, ..., png -->
+            <!-- rutas absolutas y relativas -->
+            <!-- abstenerse: -->
+            <!-- ruta desde local X -->
+            <!-- usar dirección relativa desde la carpeta del proyecto -->
+            <img src="assets/mapache.jpg" width="400" alt="Un mapache">
+            <div>
+                <h2>Muévete más eficientemente con todas tus herramientas en un mismo lugar</h2>
+                <!-- paragraph - párrafo -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis quaerat qui?</p>
+                <!-- ancla, anchar, hipervínculo -->
+                <a href="https://www.google.com.pe/?hl=es">Ver información acerca de la plataforma de Slack</a>
+                <br>
+                <a href="extra.html" target="_blank">Más información</a>
+                <br>
+                <!-- para que esto funcione otro elemento tiene que tener como id el valor que se le ponga en el href, pero sin el #s-->
+                <a href="#navegacion">Inicio</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

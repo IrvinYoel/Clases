@@ -1,0 +1,75 @@
+header {
+    border: 4px solid rebeccapurple;
+}
+
+h1{
+    color: peru;
+    font-family: Arial;
+}
+h2{
+    color: blue;    
+}
+p{
+    font-style: italic;
+    font-family: sans-serif;
+}
+/* Selector de clase */
+.importante{
+    background-color: aqua;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+/* Seleecion de ID */
+#introduccion{
+    font-size: 19px;
+}
+
+/* > Hace referencia a los primeros elementos hijos */
+/* Selector ul coge los atributos a sus hijos directos que sean li */
+ul > li{
+    color: blue;
+    text-decoration: underline  ;
+}
+
+/* .clase Z etiqueta */
+/* #id > .clase */
+/* selector selectorHijo - todos los elementos hijos */
+
+ul li {
+    font-weight: bold;
+}
+
+/* Selector que afecta a todos los hermanos de cierto selector */
+.contenido ~ div{
+    border: solid peru;
+}
+
+/* La coma es como un & */
+table, td, th{
+    border: 2px solid black;
+}
+
+/* Pseudo-clases*/
+/* :hover - cuando pasamos el mouse por encima */
+/* pointer - Manito */
+tr:hover{
+    background-color: pink;
+    cursor: pointer;
+}
+thead:hover{
+    background-color: red;
+}
+
+/* Se puece usar el nth con más cosas */
+/* Even - Par */
+tr:nth-of-type(even){
+    background-color: gray;
+}
+
+/* Odd - Impar */
+tr:nth-of-type(odd){
+    background-color: aquamarine;
+}

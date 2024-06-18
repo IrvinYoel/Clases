@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  background-color: #1e1f24;
+  color: white;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 78px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* nav */
+nav li {
+  list-style: none;
+}
+
+button {
+  padding: 16px;
+  color: white;
+  border: 1px solid gray;
+}
+
+.btn-primario {
+  background-color: #205bf1;
+}
+
+.btn-secundario {
+  background-color: #34353a;
+}
+
+.main-menu {
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+.links {
+  display: flex;
+  flex-grow: 5;
+  gap: 20px;
+  align-items: center;
+}
+
+.acess {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* header */
+
+header {
+  padding: 60px;
+}
+
+header h1,
+header p {
+  margin-bottom: 40px;
+  max-width: 55%;
+}
+
+nav *,
+header * {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.espiral {
+  top: -210px;
+  right: -100px;
+}
+
+.imagen1 {
+  top: 120px;
+  right: 300px;
+}
+
+.imagen2 {
+  top: 220px;
+  right: -50px;
+}
+
+.imagen3 {
+  top: 450px;
+  right: 270px;
+}
+
+.imagen4 {
+  top: 480px;
+  right: 0px;
+}
+
+.brands {
+  padding: 60px;
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.company {
+  min-width: 320px;
+  max-width: 600px;
+  height: 102px;
+  /* a - el valor alfa - transparencia */
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* menú-desplegable */
+#checkmenu {
+  /* Esta, pero escondido */
+  visibility: hidden;
+}
+
+.cerrar-menu {
+  /* Esta, pero no está renderizado, se ignora */
+  display: none;
+}
+
+.abrir-menu {
+  display: none;
+}
+
+@media screen and (width < 992px) {
+  header {
+    text-align: center;
+    margin-bottom: 300px;
+  }
+
+  header h1,
+  header p {
+    max-width: 100%;
+  }
+
+  .espiral {
+    top: 0px;
+    left: -100px;
+    transform: scale(0.8);
+  }
+
+  .imagen1 {
+    top: 520px;
+    left: calc(50% - 120px);
+  }
+
+  .imagen2 {
+    top: 680px;
+    left: calc(50% - 250px);
+  }
+
+  .imagen3 {
+    top: 600px;
+    left: -70px;
+  }
+
+  .imagen4 {
+    top: 640px;
+    right: 0px;
+  }
+
+  .brands {
+    position: relative;
+    top: 400px;
+  }
+
+  .companies {
+    display: flex;
+    justify-content: center;
+  }
+
+  h5 {
+    text-align: center;
+  }
+}
+
+@media screen and (width < 570px) {
+  .links {
+    /* border: 1px solid red; */
+    position: fixed;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1f24;
+    z-index: 100;
+    padding: 70px 0;
+    font-size: 24px;
+    gap: 50px;
+    top: 0;
+    right: 100vw;
+  }
+
+  .cerrar-menu {
+    position: absolute;
+    display: block;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+  }
+
+  .abrir-menu {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  #checkmenu:checked ~ .links {
+    right: 0;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+}

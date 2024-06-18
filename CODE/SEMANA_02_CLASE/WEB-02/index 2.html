@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>WEB 02</title>
+    </head>
+    <body>
+        <h1>Título de la Página</h1>
+        <hr>
+        <form action="">
+            <label for="input-nombres">Nombres:</label>
+            <!-- Required - Atributo obligatoriamente requerido -->
+            <!-- minlength = Longitud mínima / maxlength = Longitud Máxima-->
+            <input type="text" placeholder="Ej. Irvin Cerna" id="input-nombres" required minlength="2" maxlength="10">
+            <br><br>
+            <label for="">Apellidos</label>
+            <input type="text" placeholder="Ej. Cerna Gálvez">
+            <br><br>
+            <label for="input-edad">Edad</label>
+            <input type="number" min="18" max="50">
+            <br><br>
+            <label for="input-correo">Correo Electrónico</label>
+            <input type="email" id="input-correo">
+            <br><br>
+            <label for="input-pass">Contraseña</label>
+            <input type="password" id="input-pass">
+            <br><br>
+            <label >Estado Civil</label><br>
+            <label for="input-soltero">Soltero</label>
+            <input type="radio" id="input-soltero" name="estadocivil"><br>
+            <label for="input-casado">Casado</label>
+            <input type="radio" id="input-casado" name="estadocivil"><br>
+            <label for="input-divorciado">Divorciado</label>
+            <input type="radio" id="input-divorciado" name="estadocivil"><br><br>
+            <label>Ciudad</label>
+            <select>
+                <option selected disabled>Selecciona una opción</option>
+                <option value="TRU">Trujillo</option>
+                <option value="LIM">Lima</option>
+                <option value="ARE">Arequipa</option>
+            </select><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

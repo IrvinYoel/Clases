@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 125px;
+    height: 75px;
+}
+
+.card {
+    width: 750px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+}
+
+.text {
+    width: 200px;
+    height: 150px;
+    font-size: 45px;
+    padding:10px 20px 10px 10px;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 150px;
+}
+
+.fila {
+    display: flex;
+}

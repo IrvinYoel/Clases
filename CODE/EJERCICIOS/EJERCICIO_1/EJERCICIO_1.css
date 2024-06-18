@@ -1,0 +1,172 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* TEMPORAL - GUIA */
+    /* border: 1px solid red; */
+}
+
+header{
+    text-align: center;
+}
+
+img {
+    width: 100%;
+  }
+
+h1{
+    /* Va a indicar un ancho máximo */
+    max-width: 1024px;
+    /* Se centra en base a su elemento padre */
+    margin: 30px auto;
+}
+
+/* p{
+    max-width: 720px;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+button{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.btn-principal{
+    min-width: 100px;
+    padding:10px 15px;
+    border-radius: 20px;
+}
+
+.btn-secundario{
+    min-width: 100px;
+    padding:10px 15px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+small{
+    margin: 40px 0 0 0;
+    /* Porque por defecto small inline -  a block le podemos poner márgenes y trabajarlo de mejor manera */
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    max-width: 1200px;
+    /* Cuando damos dos valores - será arriba y abajo */
+    /* Cuando damos 4 valores, será - arriba - derecha - abajo - izquierda */
+    /* Hace que se centre auto en ambos lados - 0 y 0 de ambos lados */
+    margin: 0 auto;
+}
+
+.table-info{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-info td{
+    padding: 20px;
+}
+
+/* De .table-info todos los hijos que sean tr impares y de esos tr impares todos los td que tengan fondo amarillo */
+.table-info tr:nth-of-type(odd) td{
+    background-color: red;
+}
+
+/* De .table-info todos los hijos que sean tr impares y de esos tr impares todos los td que sean primeros hijos  */
+.table-info tr:nth-of-type(odd) td:nth-of-type(1){
+    border-radius: 10px 0 0 10px;
+}
+
+/* De .table-info todos los hijos que sean tr impares y de esos tr impares todos los td que sean últimos hijos*/
+.table-info tr:nth-of-type(odd) td:last-of-type{
+    border-radius: 0 10px 10px 0;
+}
+
+section{
+    padding: 60px;
+}
+nav li{
+    text-decoration: none;
+    list-style: none;
+}
+.menu-principal{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.links{
+    display: flex;
+    min-width: 500px;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+.logo {
+    width: 275px;
+    height: 29px;
+}
+
+nav *{
+    margin: 0;
+    padding: 0;
+}
+
+/* cards -- resources */
+.titulo-recursos{
+    margin: 60px;
+    text-align: center;
+}
+
+.cards-recursos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-recurso{
+    text-align: center;
+}
+
+.card-img{
+    height: 340px;
+    max-width: 330px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (width < 576px){
+    h1 {
+      font-size:36px;
+    }
+  
+    h2 {
+      font-size:28px;
+    }
+  
+    h3 {
+      font-size:24px;
+    }
+  
+    section {
+      padding:30px;
+    }
+  
+    .titulo-recursos{
+      margin:16px;
+    }
+  
+    .cards-recursos{
+      flex-direction: column;
+    }
+  
+    .card-img{
+      max-width:100%;
+      justify-content: center;
+      height: 300px;
+    }
+}

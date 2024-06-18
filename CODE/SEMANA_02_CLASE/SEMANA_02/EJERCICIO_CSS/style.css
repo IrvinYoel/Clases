@@ -1,0 +1,84 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* temporal */
+    /* border: 1px solid red; */
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  h1 {
+    /* un ancho máximo */
+    max-width: 1024px;
+    margin: 30px auto;
+    font-family: "Fraunces", serif;
+    font-weight: 300;
+    font-size: 72px;
+  }
+  
+  p {
+    max-width: 720px;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  button {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .btn-principal {
+    min-width: 100px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+  }
+  
+  .btn-secundario {
+    min-width: 100px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+  }
+  
+  small {
+    margin: 40px 0 0 0;
+    display: block;
+    /* en caso no encuentre una fuente saltará a la siguiente */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .contenedor {
+    max-width: 1200px;
+    /* margin, padding */
+    /* cuando damos 02 valores, arriba abajo */
+    /* margin:20px 40px; */
+    /* cuando damos 04 valores, arriba, derecha, abajo, izq, ⏱️ */
+    /* margin: 10px 20px 30px 40px; */
+    margin: 0 auto;
+  }
+  .table-info{
+    font-family: Arial, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table-info td{
+    padding: 20px;
+  }
+
+  .table-info tr:nth-of-type(odd){
+    background-color: yellow;
+    border-collapse: collapse;
+  }

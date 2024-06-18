@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.menu{
+    background-color: peru;
+    border:2px solid black;
+    height:600px;
+    /* Va a afectar solo a los hijos */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.link{
+    background-color: aquamarine;
+    border: 2px solid steelblue;
+    height: 100px;
+    width: 100px;
+}
